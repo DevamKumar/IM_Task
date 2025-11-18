@@ -9,7 +9,7 @@ tasks:
 2. Provide wrappers for calling Stripe and restful-api.dev endpoints.
 3. Demonstrate usage via a separate sample script.
 
-IronMountainAssignmentTask/
+AssignmentTask/
 |–  demo.py
 |– stripe_client.py
 |– restful_client.py
