@@ -1,0 +1,48 @@
+# -----------------------------
+# Python
+# -----------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environment
+venv/
+.env/
+env/
+.venv/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Byte-compiled / cache
+*.cache/
+*.pytest_cache/
+
+# Environment variables
+.env
+.env.*
+*.env
+
+# IDE / Editors
+# VSCode
+.vscode/
+# PyCharm
+.idea/
+
+# macOS
+.DS_Store
+
+# Optional: ignore local configs
+*.local
+*.config
