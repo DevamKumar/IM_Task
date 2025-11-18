@@ -25,19 +25,3 @@ def get_customers(limit=5):
     if not resp.ok:
         raise Exception(resp.text)
     return resp.json()
-
-def create_checkout_session():
-    data = {
-        "success_url": "https://example.com/success",
-        "cancel_url": "https://example.com/cancel",
-        "mode": "payment",
-        "line_items[0][price_data][currency]": "usd",
-        "line_items[0][price_data][product_data][name]": "Test_item_devam",
-        "line_items[0][price_data][unit_amount]": 100,
-        "line_items[0][quantity]": 20,
-    }
-
-    resp = _session().post(f"{BASE}/checkout/sessions", data=data)
-    if not resp.ok:
-        raise Exception(resp.text)
-    return resp.json()
